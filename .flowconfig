@@ -1,0 +1,31 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+# treat lint issues as errors (default is warning)
+all=error
+
+# allow `if (foo) { ... }` where `foo: ?boolean`
+sketchy-null-bool=off
+
+[options]
+# make all function params constant
+experimental.const_params=true
+
+include_warnings=true
+
+# treat all files in strict mode (equivalent to "use strict" directive)
+module.use_strict=true
+
+# treat class fields prefixed with underscore (e.g. `_fields`) as private
+munge_underscores=true
+
+# limit the amount of workers flow uses to 12. The default is number of virtual cores
+server.max_workers=12
+
+# Increase hash table size:
+# https://github.com/facebook/flow/issues/3143#issuecomment-270946030
+sharedmemory.hash_table_pow=21

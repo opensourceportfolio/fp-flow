@@ -1,0 +1,31 @@
+{
+  "name": "fp-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-flowtype": "^5.3.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^26.6.0",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.0",
+    "@babel/preset-env": "^7.13.0",
+    "@babel/preset-flow": "^7.12.13",
+    "flow-bin": "^0.145.0"
+  }
+}
